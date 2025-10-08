@@ -15,12 +15,20 @@ progressBars.forEach((bar) => observer.observe(bar));
 
 // ---------------- Typed.js ----------------
 var typed = new Typed("#element", {
-  strings: ["Web Developer", "Graphic Designer", "Web Designer"],
+  strings: ["Web Developer", "Java Developer", "Test Engineer"],
   typeSpeed: 50,
   backSpeed: 50,
   loop: true,
   showCursor: false,
 });
+// Mobile menu toggle
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
+
+menuToggle.addEventListener("click", () => {
+  navbar.classList.toggle("nav-active");
+});
+
 
 // ---------------- Carousel ----------------
 const projectWrapper = document.querySelector(".carousel-wrapper");
