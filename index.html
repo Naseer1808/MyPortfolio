@@ -32,7 +32,9 @@
         <h2>I'm a Java Developer</h2>
         <span id="element"></span>
       </div>
-      <div class="right-section1"><img src="./images/Hero.png" alt="" /></div>
+      <div class="right-section1"></div>
+        <img src="./images/Hero.png" alt="" />
+      </div>
     </section>
 
     <!-- ------------------------------------------------------ Section - 2 ----------------------------------------------------------------- -->
@@ -56,7 +58,6 @@
     </section>
 
     <!-- ------------------------------------------------------ Section - 3 ----------------------------------------------------------------- -->
-
     <section id="education" class="third-section">
       <h2 class="main-heading">Education</h2>
       <div class="education">
@@ -67,21 +68,18 @@
             <p>Pursuing</p>
             <p>Year of Graduation: 2026</p>
           </div>
-
           <div class="edu-card">
             <h2>BTech in Electronics and Communication Engineering</h2>
             <p>Anurag College of Engineering</p>
             <p>CGPA : 7.81</p>
             <p>Year of Graduation: 2023</p>
           </div>
-
           <div class="edu-card">
             <h2>Intermediate (12th Grade)</h2>
             <p>Sri Chaitanya Junior College</p>
             <p>Percentage : 92.2 %</p>
             <p>Year of Completion: 2019</p>
           </div>
-
           <div class="edu-card">
             <h2>SSC (10th Grade)</h2>
             <p>Sri Chaitanya School</p>
@@ -95,100 +93,106 @@
     <!-- ---------------------------------------------------------------- section - 4 -------------------------------------------------------- -->
     <section id="projects" class="fourth-section">
       <h2 class="main-heading">Projects</h2>
-      <div class="project-cards">
-        <div class="project-card">
-          <div class="project-card-right">
-            <img src="./images/portfolio.jpg" alt="Project 1" />
-          </div>
-          <div class="project-card-left">
-            <h2 class="side-heading">Portfolio Website</h2>
-            <p>
-              Project description: A personal portfolio website showcasing
-              skills, projects, and contact information. Designed with a modern
-              UI and responsive layout.
-            </p>
-            <br />
-            <p><b>Technologies used:</b> HTML, CSS, JavaScript</p>
+      <div class="carousel-container">
+        <button class="carousel-btn left" id="prevBtn">&#10094;</button>
+        <div class="carousel-wrapper">
+          <div class="project-cards">
+            <!-- Project cards stay the same -->
+            <div class="project-card">
+              <div class="project-card-right">
+                <img src="./images/portfolio.jpg" alt="Project 1" />
+              </div>
+              <div class="project-card-left">
+                <h2 class="side-heading">Portfolio Website</h2>
+                <p>
+                  Project description: A personal portfolio website showcasing
+                  skills, projects, and contact information. Designed with a modern
+                  UI and responsive layout.
+                </p>
+                <br />
+                <p><b>Technologies used:</b> HTML, CSS, JavaScript</p>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card-right">
+                <img src="./images/1_Netbanking_Top-things-to-know-about-mobile-banking-applications.jpg" alt="Project 1" />
+              </div>
+              <div class="project-card-left">
+                <h2 class="side-heading">Digital Banking Application</h2>
+                <p>
+                  Project description: Developed a robust platform to unify multiple banking services, providing users with consolidated account statements and seamless financial insights. Designed and implemented 20+ secure REST APIs with role-based authentication using Spring Security. Integrated AWS S3 for scalable storage and archiving of over 5 million financial statements, ensuring high availability and data security. Optimized SQL queries and database indexing to support real-time data processing, enhancing reporting speed and overall system performance.
+                </p>
+                <br />
+                <p><b>Technologies used:</b>Spring Boot, Spring JDBC, Spring Security, SQL, AWS S3</p>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card-right">
+                <img src="./images/Tour_management_software.jpg" alt="Project 1" />
+              </div>
+              <div class="project-card-left">
+                <h2 class="side-heading">Travel Management Application</h2>
+                <p>
+                  Project description: Developed a comprehensive corporate travel management system that streamlines the booking process for employees and administrators. The application supports user and admin registration, journey planning, ticket booking, rescheduling, and account management. Integrated dynamic fare calculation including GST and surge pricing for peak hours and weekends to ensure accurate pricing. Designed an efficient database schema and optimized SQL queries, resulting in faster booking transactions and improved system performance. Implemented robust exception handling and input validation, enhancing reliability and delivering a smooth, user-friendly experience for corporate users.
+                </p>
+                <br />
+                <p><b>Technologies used:</b> Core Java, JDBC, MySQL</p>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card-right">
+                <img src="./images/weather.jpg" alt="Project 2" />
+              </div>
+              <div class="project-card-left">
+                <h2 class="side-heading">Weather App</h2>
+                <p>
+                  Project description: A simple weather application that fetches
+                  real-time weather data from an API and displays temperature,
+                  humidity, and conditions for any location.
+                </p>
+                <br />
+                <p>
+                  <b>Technologies used:</b> HTML, CSS, JavaScript, OpenWeather API
+                </p>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card-right">
+                <img src="./images/todo.png" alt="Project 3" />
+              </div>
+              <div class="project-card-left">
+                <h2 class="side-heading">To-Do List App</h2>
+                <p>
+                  Project description: A task management application that allows
+                  users to add, edit, and delete tasks with a simple and interactive
+                  UI.
+                </p>
+                <br />
+                <p><b>Technologies used:</b> HTML, CSS, JavaScript</p>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card-right">
+                <img src="./images/Gemini_Generated_Image_6ordzg6ordzg6ord.png" alt="Project 3" />
+              </div>
+              <div class="project-card-left">
+                <h2 class="side-heading">DETECTION OF LUNG CANCER IN CT IMAGES USING IMAGE PROCESSING </h2>
+                <p>
+                  Project description: A lung cancer detection system using image processing is used to classify the present of lung cancer in an CT-images. In this 
+                  study, MATLAB have been used through every procedures made. It helps in accurate and early-stage detection of lung cancer.
+                </p>
+                <br />
+                <p><b>Technologies used:</b>MATLAB, Image Processing Techniques</p>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="project-card">
-          <div class="project-card-right">
-            <img src="./images/1_Netbanking_Top-things-to-know-about-mobile-banking-applications.jpg" alt="Project 1" />
-          </div>
-          <div class="project-card-left">
-            <h2 class="side-heading">Digital Banking Application</h2>
-            <p>
-              Project description: Developed a robust platform to unify multiple banking services, providing users with consolidated account statements and seamless financial insights. Designed and implemented 20+ secure REST APIs with role-based authentication using Spring Security. Integrated AWS S3 for scalable storage and archiving of over 5 million financial statements, ensuring high availability and data security. Optimized SQL queries and database indexing to support real-time data processing, enhancing reporting speed and overall system performance.
-            </p>
-            <br />
-            <p><b>Technologies used:</b>Spring Boot, Spring JDBC, Spring Security, SQL, AWS S3</p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-card-right">
-            <img src="./images/Tour_management_software.jpg" alt="Project 1" />
-          </div>
-          <div class="project-card-left">
-            <h2 class="side-heading">Travel Management Application</h2>
-            <p>
-              Project description: Developed a comprehensive corporate travel management system that streamlines the booking process for employees and administrators. The application supports user and admin registration, journey planning, ticket booking, rescheduling, and account management. Integrated dynamic fare calculation including GST and surge pricing for peak hours and weekends to ensure accurate pricing. Designed an efficient database schema and optimized SQL queries, resulting in faster booking transactions and improved system performance. Implemented robust exception handling and input validation, enhancing reliability and delivering a smooth, user-friendly experience for corporate users.
-            </p>
-            <br />
-            <p><b>Technologies used:</b> Core Java, JDBC, MySQL</p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-card-right">
-            <img src="./images/weather.jpg" alt="Project 2" />
-          </div>
-          <div class="project-card-left">
-            <h2 class="side-heading">Weather App</h2>
-            <p>
-              Project description: A simple weather application that fetches
-              real-time weather data from an API and displays temperature,
-              humidity, and conditions for any location.
-            </p>
-            <br />
-            <p>
-              <b>Technologies used:</b> HTML, CSS, JavaScript, OpenWeather API
-            </p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-card-right">
-            <img src="./images/todo.png" alt="Project 3" />
-          </div>
-          <div class="project-card-left">
-            <h2 class="side-heading">To-Do List App</h2>
-            <p>
-              Project description: A task management application that allows
-              users to add, edit, and delete tasks with a simple and interactive
-              UI.
-            </p>
-            <br />
-            <p><b>Technologies used:</b> HTML, CSS, JavaScript</p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-card-right">
-            <img src="./images/Gemini_Generated_Image_6ordzg6ordzg6ord.png" alt="Project 3" />
-          </div>
-          <div class="project-card-left">
-            <h2 class="side-heading">DETECTION OF LUNG CANCER IN CT IMAGES USING IMAGE PROCESSING </h2>
-            <p>
-              Project description: A lung cancer detection system using image processing is used to classify the present of lung cancer in an CT-images. In this 
-              study, MATLAB have been used through every procedures made. It helps in accurate and early-stage detection of lung cancer.
-            </p>
-            <br />
-            <p><b>Technologies used:</b>MATLAB, Image Processing Techniques</p>
-          </div>
-        </div>
-
+        <button class="carousel-btn right" id="nextBtn">&#10095;</button>
       </div>
     </section>
 
@@ -283,67 +287,34 @@
     <!-- ------------------------------------------------------ section - 6 ------------------------------------------------------- -->
 
     <section id="contact" class="contact-section">
-      <h2 class="main-heading">Contact Me</h2>
-      <div class="contact-container">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLScYx29aNJ_iXq-zF6OiGW5LbNeVjdeLFT52YPshC_NecLobmA/viewform?embedded=true"
-          width="640"
-          height="1000"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          scrolling="no"
-        >
-          Loading…
-        </iframe>
-
-        <!-- <form id="contactForm">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your Name"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="Subject"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Your Message"
-              required
-            ></textarea>
-          </div>
-          <div class="form-button">
-            <button type="submit" class="submit-btn">Send Message</button>
-          </div>
-        </form> -->
-      </div>
-      <div class="social-media-container">
+    <h2 class="main-heading">Contact Me</h2>
+    <div class="contact-container">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <label for="mobile">Mobile</label>
+          <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Why to Contact Me</label>
+          <textarea id="message" name="message" rows="4" placeholder="Short Description" required></textarea>
+        </div>
+        <div id="formMessage" style="margin-top:10px; font-weight:bold;"></div>
+        <div class="form-button">
+          <button type="submit" class="submit-btn">Send Message</button>
+        </div>
+      </form>
+    </div>
+    <div class="social-media-container">
+      <!-- Your social links stay same -->
+       <div class="social-media-container">
         <a href="#" class="social-link linkedin">
           <i class="fa-brands fa-linkedin"></i>
         </a>
@@ -360,20 +331,14 @@
           <i class="fa-solid fa-envelope"></i>
         </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script>
-
-    </script>
-
-    <script
-      src="https://kit.fontawesome.com/183f4a10c3.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-    <script src="./script.js"></script>
-    <script src="./particles.js"></script>
-  </body>
+  <script src="https://kit.fontawesome.com/183f4a10c3.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+  <script src="./script.js"></script>
+  <script src="./particles.js"></script>
+</body>
 </html>

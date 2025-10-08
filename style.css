@@ -13,6 +13,7 @@ body {
   background-color: black;
   color: white;
   font-family: "poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 section {
@@ -464,4 +465,67 @@ textarea:focus {
 }
 .email {
   background: #d44638;
+}
+/* Carousel container */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+/* Carousel wrapper scrollable */
+.carousel-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+/* Hide default scrollbar */
+.carousel-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Project cards inside carousel */
+.project-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.project-cards > div {
+  min-width: 300px; /* Adjust card width */
+  flex: 0 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #1a1a1a; /* match your template */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Carousel buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255,255,255,0.2);
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
 }
