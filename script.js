@@ -15,7 +15,7 @@ progressBars.forEach((bar) => observer.observe(bar));
 
 // ---------------- Typed.js ----------------
 var typed = new Typed("#element", {
-  strings: ["Web Developer", "Java Developer", "Test Engineer"],
+  strings: ["Software Engineer","Web Developer", "Java Developer", "Test Engineer"],
   typeSpeed: 50,
   backSpeed: 50,
   loop: true,

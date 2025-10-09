@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Shaik Naseeruddin – Java Developer & Software Engineer</title>
+    <link rel="icon" href="images/favicon.ico" type="image/png">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <div class="left">Portfolio</div>
+        <div class="left">Shaik N. Portfolio</div>
         <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         <div class="right" id="nav-links">
           <ul>
@@ -17,12 +18,11 @@
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills & Certifications</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact Me</a></li>
           </ul>
         </div>
       </nav>
-
     </header>
 
     <div id="particles-js"></div>
@@ -34,7 +34,7 @@
         <h2>I'm a Java Developer</h2>
         <span id="element"></span>
       </div>
-      <div class="right-section1"></div>
+      <div class="right-section1">
         <img src="./images/Hero.png" alt="" />
       </div>
     </section>
@@ -199,148 +199,136 @@
     </section>
 
     <!-- ----------------------------------------- section - 5 ----------------------------------------------------------------- -->
-
     <section id="skills" class="fifth-section">
-      <h2 class="main-heading">Skills & Certifications</h2>
-      <div class="skills-certifications">
-        <!-- Left Side: Skills -->
-        <div class="skills">
-          <h3 class="side-heading">Skills</h3>
-          <div class="skill">
-            <p>React.js</p>
-            <div class="progress-container">
-              <div class="progress-bar">
-                <div class="progress" data-progress="75"></div>
-              </div>
-              <span class="percentage">75%</span>
-            </div>
-          </div>
-          <div class="skill">
-            <p>Node.js</p>
-            <div class="progress-container">
-              <div class="progress-bar">
-                <div class="progress" data-progress="80"></div>
-              </div>
-              <span class="percentage">80%</span>
-            </div>
-          </div>
-          <div class="skill">
-            <p>Java & Spring Boot</p>
-            <div class="progress-container">
-              <div class="progress-bar">
-                <div class="progress" data-progress="70"></div>
-              </div>
-              <span class="percentage">70%</span>
-            </div>
-          </div>
-          <div class="skill">
-            <p>MySQL</p>
-            <div class="progress-container">
-              <div class="progress-bar">
-                <div class="progress" data-progress="65"></div>
-              </div>
-              <span class="percentage">65%</span>
-            </div>
-          </div>
-          <div class="skill">
-            <p>MongoDB</p>
-            <div class="progress-container">
-              <div class="progress-bar">
-                <div class="progress" data-progress="75"></div>
-              </div>
-              <span class="percentage">75%</span>
-            </div>
-          </div>
+      <h2 class="main-heading">Technical Skills</h2>
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+          <h3>Java</h3>
+          <p>OOPs, Collections, Exception Handling, Multithreading, Generics, File I/O, JSP/Servlets.</p>
         </div>
-
-        <!-- Right Side: Certifications -->
-        <div class="certifications">
-          <h3 class="side-heading">Certifications</h3>
-          <div class="certification-list">
-            <div class="cert-card">
-              <p>Certified React Developer - Udemy</p>
-              <a href="#" class="cert-link" target="_blank">View Certificate</a>
-            </div>
-            <div class="cert-card">
-              <p>Node.js & Express Certification - Coursera</p>
-              <a href="#" class="cert-link" target="_blank">View Certificate</a>
-            </div>
-            <div class="cert-card">
-              <p>Spring Boot Microservices - Udemy</p>
-              <a href="#" class="cert-link" target="_blank">View Certificate</a>
-            </div>
-            <div class="cert-card">
-              <p>Database Management with MySQL - IBM</p>
-              <a href="#" class="cert-link" target="_blank">View Certificate</a>
-            </div>
-            <div class="cert-card">
-              <p>MongoDB for Developers - MongoDB University</p>
-              <a href="#" class="cert-link" target="_blank">View Certificate</a>
-            </div>
-            <div class="cert-card">
-              <p>Web development using React Js - IBM</p>
-              <a href="#" class="cert-link" target="_blank">View Certificate</a>
-            </div>
-          </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+          <h3>JavaScript</h3>
+          <p>Frontend scripting, event handling, and basic DOM manipulation.</p>
+        </div>
+        <!-- Backend Technologies -->
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot">
+          <h3>Spring Framework</h3>
+          <p>Spring Core, Boot, ORM, AOP, DAO, RESTful APIs, and Microservices.</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg" alt="Hibernate">
+          <h3>Hibernate ORM</h3>
+          <p>ORM mapping, HQL queries, transaction handling, and JPA integration.</p>
+        </div>
+        <!-- Frontend -->
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js">
+          <h3>React.js</h3>
+          <p>Built dynamic UIs, handled state management, and integrated REST APIs.</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+          <h3>HTML & CSS</h3>
+          <p>Developed responsive and accessible user interfaces.</p>
+        </div>
+        <!-- Database -->
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+          <h3>MySQL</h3>
+          <p>Database design, query optimization, and stored procedures.</p>
+        </div>
+        <!-- Cloud Platforms -->
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/amazonwebservices.svg" alt="AWS" style="background-color:white; border-radius:6px; padding:5px;">
+          <h3>AWS</h3>
+          <p>Worked with EC2, S3 for scalable deployments and storage solutions.</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
+          <h3>Microsoft Azure</h3>
+          <p>Hands-on experience with Azure Pipelines, Boards, and Repos.</p>
+        </div>
+        <!-- DevOps -->
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="DevOps">
+          <h3>Azure DevOps</h3>
+          <p>Implemented CI/CD pipelines, automated builds, and test deployments.</p>
+        </div>
+        <!-- Version Control -->
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+          <h3>Git & GitHub</h3>
+          <p>Used Git workflows for collaborative development and version management.</p>
+        </div>
+        <!-- CS Foundations -->
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="DSA">
+          <h3>Data Structures & Algorithms</h3>
+          <p>Applied core DSA principles in backend problem-solving and optimization.</p>
+        </div>
+        <!-- Agile -->
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Agile">
+          <h3>Agile & Scrum</h3>
+          <p>Active participation in sprints, retrospectives, and backlog refinement.</p>
         </div>
       </div>
     </section>
-
     <!-- ------------------------------------------------------ section - 6 ------------------------------------------------------- -->
-
     <section id="contact" class="contact-section">
-    <h2 class="main-heading">Contact Me</h2>
-    <div class="contact-container">
-      <form id="contactForm">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your Name" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your Email" required />
-        </div>
-        <div class="form-group">
-          <label for="mobile">Mobile</label>
-          <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile" required />
-        </div>
-        <div class="form-group">
-          <label for="message">Why to Contact Me</label>
-          <textarea id="message" name="message" rows="4" placeholder="Short Description" required></textarea>
-        </div>
-        <div id="formMessage" style="margin-top:10px; font-weight:bold;"></div>
-        <div class="form-button">
-          <button type="submit" class="submit-btn">Send Message</button>
-        </div>
-      </form>
-    </div>
-    <div class="social-media-container">
-      <!-- Your social links stay same -->
-       <div class="social-media-container">
-        <a href="#" class="social-link linkedin">
+      <h2 class="main-heading">Contact Me</h2>
+      <div class="contact-container">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <label for="mobile">Mobile</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Why to Contact Me</label>
+            <textarea id="message" name="message" rows="4" placeholder="Short Description" required></textarea>
+          </div>
+          <div id="formMessage" style="margin-top:10px; font-weight:bold;"></div>
+          <div class="form-button">
+            <button type="submit" class="submit-btn">Send Message</button>
+          </div>
+        </form>
+      </div>
+      <div class="social-media-container">
+        <a href="https://www.linkedin.com/in/shaik-naseeruddin-120780244" class="social-link linkedin">
           <i class="fa-brands fa-linkedin"></i>
         </a>
-        <a href="#" class="social-link github">
+        <a href="https://github.com/Naseer1808" class="social-link github">
           <i class="fa-brands fa-github"></i>
         </a>
-        <a href="#" class="social-link twitter">
+        <!-- <a href="#" class="social-link twitter">
           <i class="fa-brands fa-twitter"></i>
         </a>
         <a href="#" class="social-link instagram">
           <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="#" class="social-link email">
+        </a> -->
+        <a href="mailto:naseeruddin1808@gmail.com" class="social-link email">
           <i class="fa-solid fa-envelope"></i>
         </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="https://kit.fontawesome.com/183f4a10c3.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
-  <script src="./script.js"></script>
-  <script src="./particles.js"></script>
-</body>
+    <script src="https://kit.fontawesome.com/183f4a10c3.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./particles.js"></script>
+  </body>
 </html>

@@ -483,3 +483,43 @@ input:focus, textarea:focus {
     display: none;
   }
 }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: start;
+  padding: 50px 0;
+}
+
+.skill-card {
+  background-color: rgb(15, 15, 15);
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  max-width: 260px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+}
+
+.skill-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.skill-card h3 {
+  color: #ffd700;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.skill-card p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #dcdcdc;
+}
