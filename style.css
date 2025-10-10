@@ -124,8 +124,8 @@ nav ul li a:hover {
 }
 
 @keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateX(-20px); }
+  0%   { transform: translateY(0); }
+  50%  { transform: translateX(-20px); }
   100% { transform: translateY(0); }
 }
 
@@ -230,11 +230,13 @@ nav ul li a:hover {
   padding: 50px 0;
 }
 
-.skills, .certifications {
+.skills,
+.certifications {
   width: 50%;
 }
 
-.skills h3, .certifications h3 {
+.skills h3,
+.certifications h3 {
   font-size: 22px;
   margin-bottom: 10px;
 }
@@ -325,7 +327,8 @@ label {
   margin-bottom: 8px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 600px;
   padding: 10px;
   border-radius: 5px;
@@ -334,7 +337,8 @@ input, textarea {
   transition: border-color 0.3s ease;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #4caf50;
   outline: none;
 }
@@ -380,11 +384,11 @@ input:focus, textarea:focus {
   box-shadow: 4px 4px 15px rgba(0,0,0,0.3);
 }
 
-.linkedin { background: #0077b5; }
-.github { background: #333; }
-.twitter { background: #1da1f2; }
+.linkedin  { background: #0077b5; }
+.github    { background: #333; }
+.twitter   { background: #1da1f2; }
 .instagram { background: #e1306c; }
-.email { background: #d44638; }
+.email     { background: #d44638; }
 
 /* -------------------- Carousel -------------------- */
 .carousel-container {
@@ -433,7 +437,7 @@ input:focus, textarea:focus {
   background-color: rgba(255,255,255,0.5);
 }
 
-.carousel-btn.left { left: 10px; }
+.carousel-btn.left  { left: 10px; }
 .carousel-btn.right { right: 10px; }
 
 /* Hamburger Button */
@@ -445,11 +449,12 @@ input:focus, textarea:focus {
 }
 
 /* Mobile Menu */
+/*
 @media screen and (max-width: 768px) {
   nav ul {
     flex-direction: column;
     gap: 10px;
-    display: none; /* hide by default */
+    display: none; 
     background-color: rgb(50, 49, 49);
     position: absolute;
     top: 60px;
@@ -467,13 +472,14 @@ input:focus, textarea:focus {
     display: block;
   }
 
-  /* Carousel arrows hidden for small screens */
   .carousel-btn {
     display: none;
   }
 }
+*/
 
 /* Tablet Styles */
+/*
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   nav ul {
     flex-direction: row;
@@ -483,6 +489,8 @@ input:focus, textarea:focus {
     display: none;
   }
 }
+*/
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
