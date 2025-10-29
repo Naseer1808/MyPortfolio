@@ -676,3 +676,40 @@ textarea:focus {
   transform: scale(1.05);
   color: #0c0c0c; /* your highlight green */
 }
+/* === FINAL FIX: Keep image size, allow movement, remove right gap === */
+html, body {
+  overflow-x: clip; /* modern, prevents right whitespace but keeps overflow visuals */
+}
+
+.first-section1 {
+  position: relative;
+  overflow: visible; /* allow the float animation to show */
+}
+
+.right-section1 {
+  flex: 1;
+  position: relative;
+  overflow: visible;
+}
+
+.right-section1 img {
+  display: block;
+  position: relative;
+  height: 600px;   /* your original height */
+  width: auto;
+  margin-left: auto;
+  margin-right: 0;
+  transform: translateX(0);
+  animation: float 3s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Optional safety for mobile devices */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: clip;
+  }
+  .right-section1 img {
+    height: 400px; /* adjusts only if it visually overflows too much */
+  }
+}
