@@ -531,3 +531,148 @@ textarea:focus {
   line-height: 1.4;
   color: #dcdcdc;
 }
+/* === Mobile-only navbar (does not affect desktop) === */
+@media (max-width: 768px) {
+  /* show hamburger on mobile */
+  .menu-toggle { display: block; }
+
+  /* collapse links by default on mobile */
+  #nav-links {
+    position: absolute;
+    top: 60px;            /* matches your fixed header height */
+    left: 12px;
+    right: 12px;
+    display: none;        /* hidden until toggled */
+    background: rgb(50, 49, 49);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 8px;
+    padding: 10px 12px;
+    z-index: 1001;
+  }
+  #nav-links ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* visible when JS toggles this class */
+  #nav-links.nav-open { display: block; }
+}
+
+/* === Mobile UX improvements (ONLY mobile) — hero, about, carousels === */
+@media (max-width: 768px) {
+  /* Hero: friendlier sizing */
+  .left-section1 { padding-top: 40px; font-size: 1.6rem; }
+  .left-section1 h2 { font-size: 1.9rem; }
+  .left-section1 p { font-size: 1.1rem; }
+  #element { font-size: 24px; }
+  .right-section1 img { height: 260px; }
+
+  /* About: improve readability */
+  .summary { flex-direction: column; gap: 20px; }
+  .right-summary p { font-size: 0.96rem; line-height: 1.65; }
+
+  /* About: collapsed by default with line clamp */
+  body.mobile-enhanced:not(.about-expanded) .right-summary p {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;         /* show ~5 lines on mobile */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .about-toggle {
+    margin-top: 8px;
+    display: inline-block;
+    font-size: 0.95rem;
+    text-decoration: underline;
+    color: #9ad1ff;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 4px 0;
+  }
+
+  /* Education: horizontal carousel (swipeable) */
+  .edu {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 6px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .edu::-webkit-scrollbar { display: none; }
+  .edu-card {
+    min-width: 280px;              /* card width on mobile */
+    scroll-snap-align: start;
+  }
+
+  /* Skills: horizontal carousel (swipeable) */
+  .skills-grid {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 6px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .skills-grid::-webkit-scrollbar { display: none; }
+  .skill-card {
+    min-width: 220px;              /* card width on mobile */
+    scroll-snap-align: start;
+  }
+
+  /* Sections: tighter padding for mobile */
+  section { padding: 70px 16px 32px; }
+}
+
+/* === Contact form: mobile-friendly layout & states (from your third block) === */
+@media (max-width: 768px) {
+  .contact-container {
+    width: 100%;
+    padding: 16px;
+    margin: 0;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.06);
+    backdrop-filter: blur(2px);
+  }
+  .form-group { margin-bottom: 12px; }
+  label { font-size: 0.9rem; opacity: 0.9; }
+
+  input, textarea {
+    width: 100%;
+    max-width: 100%;
+    background: #0f0f0f;
+    border: 1px solid rgba(255,255,255,0.12);
+    color: #eaeaea;
+    border-radius: 10px;
+    padding: 12px 12px;
+  }
+  input:focus, textarea:focus {
+    border-color: #39ff14;
+    box-shadow: 0 0 0 3px rgba(57,255,20,0.15);
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+
+  /* feedback messages */
+  #formMessage {
+    font-size: 0.95rem;
+    margin-top: 8px;
+  }
+}
+.home-btn {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.home-btn:hover {
+  transform: scale(1.05);
+  color: #0c0c0c; /* your highlight green */
+}
